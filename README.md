@@ -1,6 +1,6 @@
 # Replique-pedestal
 
-This an example project for using [replique]() with [pedestal]().
+This an example project for using [replique](https://github.com/EwenG/replique.el) with [pedestal](https://github.com/pedestal/pedestal).
 
 - Clone the project
 - Start a REPL (`M-x replique/repl` ) in the directory where the project was cloned

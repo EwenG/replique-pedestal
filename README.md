@@ -17,7 +17,7 @@ This an example project for using [replique](https://github.com/EwenG/replique.e
 The `main.js` file was already there when you cloned the repository. Let's see how this file was generated.
 
 - Quit the cljs REPL: `:cljs/quit`
-- In the `replique-pedestal.core` namespace, change the script included in the index page to be: `<script src=\"/main2.js\"></script>`. Reload the namespace: `M-x replique/load-file`
+- From the `replique-pedestal.core` namespace, change the script included in the index page to be: `<script src=\"/main2.js\"></script>`. Reload the namespace: `M-x replique/load-file`
 - Turn the REPL into a cljs REPL: `M-x replique/cljs-repl`
 - Reload the browser page. Notice that the browser complains that the `main2.js` cannot be found
 - Try to type something in the cljs REPL. Nothing happens because the REPL is waiting for a browser to connect. Let's fix it.

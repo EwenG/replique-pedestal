@@ -1,0 +1,5 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.9.0"}
+        org.clojure/clojurescript {:mvn/version "1.10.339"}
+        io.pedestal/pedestal.service {:mvn/version "0.5.4"}
+        io.pedestal/pedestal.immutant {:mvn/version "0.5.4"}}}

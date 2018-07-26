@@ -24,7 +24,10 @@
 (def server-conf {::http/routes #(deref #'routes)
                   ::http/resource-path "/public"
                   ::http/type :immutant
-                  ::http/port 8080})
+                  ::http/port 8080
+                  ;; This is necessary during development with Replique.
+                  ;; Don't put it in production !
+                  ::http/secure-headers {:content-security-policy-settings {}}})
 
 (defonce server (http/create-server server-conf))
 

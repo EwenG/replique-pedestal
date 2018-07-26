@@ -5,12 +5,11 @@ This an example project for using [replique](https://github.com/EwenG/replique.e
 - Clone the project
 - Start a REPL (`M-x replique/repl` ) in the directory where the project was cloned
 - Load the `replique-pedestal.core` namespace. From the `replique-pedestal.core` namespace, start the server `(http/start server)`. The server is started on port `8080`.
-- Turn the REPL into a cljs REPL: `M-x replique/cljs-repl`
+- Turn the REPL into a cljs REPL: `M-x replique/cljs-repl` and, once prompted for a namespace, select "replique_pedestal.front"
 - Open a browser tab at `localhost:8080`
 - Notice that the HTML markup references a `main.js` file. The `main.js` file already exists in the directory `resources/public/`. `resources/public/` is the assets folder of the web server started by pedestal.
 - At this point, the cljs REPL should be fully functional. The browser has successfully connected to it.
-- Open the browser web console. You should see that the browser is complaining that it cannot load the `replique-pedestal.front` namespace. The reason is that `main.js` tries to load the `replique-pedestal.front` namespace, but this namespace has not yet been compiled. Let's fix it.
-- Open the `front.cljs` file and load it: `M-x replique/load-file`. The `replique-pedestal.front` has been loaded in the browser and compiled to disk.
+- Open the `front.cljs` file. Change the string "This works" into "This works2". Save the file and and load it: `M-x replique/load-file`. The `replique-pedestal.front` has been loaded in the browser and compiled to disk.
 - Reload the browser page, notice how the `replique-pedestal.front` namespace is executed again.
 
 
